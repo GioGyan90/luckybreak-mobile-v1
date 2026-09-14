@@ -1,6 +1,6 @@
-# Lucky Break Mobile v1.0
+# Lucky Break Mobile v1.1.0
 
-玩家移动版，横屏游玩。
+玩家移动版，横屏游玩。v1.1.0 使用全屏球桌和卧室场景，操作 HUD 与主页入口悬浮在场景上。
 
 在线地址：https://GioGyan90.github.io/luckybreak-mobile-v1/
 
