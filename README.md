@@ -1,4 +1,4 @@
-# Lucky Break Mobile v1.2.3
+# Lucky Break Mobile v1.2.4
 
 玩家移动版，横屏游玩。v1.2.0 新增游艇场景首页、小图标导航、故事插画入口与主对战按钮，保留中英文和六个原有功能入口。
 
@@ -41,3 +41,12 @@
 - 修复图鉴 3D 预览缩放和快速切页时的异步加载异常。
 - 完成 101 个界面状态、2424 个尺寸与语言组合检查，以及交互回归和生产构建验证。
 
+
+
+## v1.2.4 · 2026-10-08
+
+- Compact 13-tick precision aiming control and separate spin/angle adjustment dialogs.
+- Larger avatars with clockwise countdown rings and eight-ball pocketed rows.
+- Top-aligned status, view and log controls; icon pause button and handedness in pause settings.
+- New horizontal gold logo and Gloria yacht cover with foreground gaming props.
+- Full-resolution 1816×866 homepage background compressed to 205,842 bytes (about 201 KiB).
