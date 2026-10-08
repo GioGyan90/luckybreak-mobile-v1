@@ -50,3 +50,13 @@
 - Top-aligned status, view and log controls; icon pause button and handedness in pause settings.
 - New horizontal gold logo and Gloria yacht cover with foreground gaming props.
 - Full-resolution 1816×866 homepage background compressed to 205,842 bytes (about 201 KiB).
+
+## 2026-10-08 · 故事与比赛体验更新
+
+- 优化中文文案，修复多页面中英文混用。
+- 保留顶视图偏好，下一杆自动恢复；自由球支持点击拿起、移动和再次点击放下，并显示摆位光环。
+- 赌注协商改为左侧立绘、右侧文字与操作，前进按钮统一金色。
+- 隐藏随机事件抽取数字；卸下球杆显示逐支耐久。
+- 修复包括 NPC 球杆在内的重复出售及存档重载后恢复库存漏洞。
+- 短信、升级和里程碑奖励使用自动消失提示，显示在手机等弹层之上。
+- 保留现有首页清晰图片与浏览器存档。
