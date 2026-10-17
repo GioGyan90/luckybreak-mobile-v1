@@ -11639,161 +11639,6 @@
       ]
     },
     {
-      "id": "naomi-branch_event-14",
-      "opponentId": "naomi",
-      "stage": "encounter",
-      "title": "Naomi's Last-Minute Invitation",
-      "backgroundAssetId": "luxury-cruise-ship-night-bg",
-      "lines": [
-        {
-          "speaker": "Naomi",
-          "portraitAssetId": "naomi-standee",
-          "text": "You handled that last game pretty well."
-        },
-        {
-          "speaker": "Naomi",
-          "portraitAssetId": "naomi-standee",
-          "text": "The bar is still open. Come have one drink with me before you leave?"
-        }
-      ],
-      "once": true,
-      "choices": [
-        {
-          "id": "go-drink",
-          "label": "Go for a drink",
-          "afterLineIndex": 1,
-          "lines": [
-            {
-              "speaker": "Player",
-              "portraitAssetId": "player-portrait",
-              "text": "All right. One drink, then I call it a night."
-            },
-            {
-              "speaker": "Naomi",
-              "portraitAssetId": "naomi-standee",
-              "text": "Good. Then spend that hundred like it bought you a calmer stroke."
-            },
-            {
-              "speaker": "System",
-              "text": "Few glasses of wine later..."
-            },
-            {
-              "speaker": "Naomi",
-              "text": "i'm so drunk...",
-              "portraitAssetId": "naomi-standee-bar"
-            }
-          ],
-          "effects": [
-            {
-              "type": "addMoney",
-              "amount": -100
-            },
-            {
-              "type": "addNpcAffinity",
-              "opponentId": "naomi",
-              "amount": 2
-            }
-          ],
-          "isEndCheckpoint": false,
-          "choices": [
-            {
-              "id": "choice-1",
-              "label": "Call a taxi",
-              "afterLineIndex": 3,
-              "lines": [
-                {
-                  "speaker": "Player",
-                  "text": "I'll call a taxi for you.",
-                  "portraitAssetId": "player-portrait"
-                },
-                {
-                  "speaker": "Naomi",
-                  "text": "Thanks dude...",
-                  "portraitAssetId": "naomi-standee"
-                }
-              ],
-              "effects": [
-                {
-                  "type": "addNpcAffinity",
-                  "opponentId": "naomi",
-                  "amount": 2
-                }
-              ],
-              "isEndCheckpoint": true,
-              "reward": {
-                "mode": "fixed",
-                "fixed": [
-                  {
-                    "type": "addMoney",
-                    "amount": -100
-                  }
-                ]
-              }
-            },
-            {
-              "id": "choice-2",
-              "label": "Send her to hotel",
-              "afterLineIndex": 3,
-              "lines": [
-                {
-                  "speaker": "Player",
-                  "text": "...Naomi?",
-                  "portraitAssetId": "player-portrait"
-                }
-              ],
-              "effects": [],
-              "isEndCheckpoint": true,
-              "nextDialogueId": "dialogue-15"
-            }
-          ]
-        },
-        {
-          "id": "decline-drink",
-          "label": "Head home",
-          "afterLineIndex": 1,
-          "lines": [
-            {
-              "speaker": "Player",
-              "portraitAssetId": "player-portrait",
-              "text": "Not tonight. I need to keep my head clear."
-            },
-            {
-              "speaker": "Naomi",
-              "portraitAssetId": "naomi-standee",
-              "text": "Practical. A little dull, but practical."
-            }
-          ],
-          "effects": [
-            {
-              "type": "addNpcAffinity",
-              "opponentId": "naomi",
-              "amount": -1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "dialogue-15",
-      "opponentId": "naomi",
-      "stage": "encounter",
-      "title": "Lose your mind",
-      "backgroundAssetId": "b4-bg",
-      "lines": [
-        {
-          "speaker": "Player",
-          "portraitAssetId": "player-portrait",
-          "text": "Wake up, Naomi!"
-        },
-        {
-          "speaker": "Naomi",
-          "text": "Don't speek...Idiot.",
-          "portraitAssetId": "naomi-standee-drunk"
-        }
-      ],
-      "once": true
-    },
-    {
       "id": "eline-pre-17",
       "opponentId": "eline",
       "matchId": "eline-soft-hands",
@@ -11867,36 +11712,6 @@
           "text": "Nana Shirogane is ready for a set."
         }
       ]
-    },
-    {
-      "id": "naomis dinner",
-      "opponentId": "naomi",
-      "stage": "intro",
-      "title": "Naomis dinner",
-      "backgroundAssetId": "luxury-cruise-ship-night-bg",
-      "lines": [
-        {
-          "speaker": "Player",
-          "portraitAssetId": "player-portrait",
-          "text": "There you are."
-        },
-        {
-          "speaker": "Naomi",
-          "text": "So, what next?",
-          "portraitAssetId": "naomi-standee-bar"
-        },
-        {
-          "speaker": "Player",
-          "text": "Straight home",
-          "portraitAssetId": "player-portrait"
-        },
-        {
-          "speaker": "Naomi",
-          "text": "...",
-          "portraitAssetId": "naomi-standee-drunk"
-        }
-      ],
-      "once": true
     },
     {
       "id": "lin's master class",
@@ -14396,38 +14211,6 @@
       "dialogues.gloria-pre.lines.0.text": "大海让每个人都显得平静，但桌台会告诉我谁才是真正如此。",
       "dialogues.gloria-pre.lines.1.speaker": "玩家",
       "dialogues.gloria-pre.lines.1.text": "那就让桌台来介绍我吧。",
-      "dialogues.naomi-branch_event-14.title": "娜奥米的最后一刻邀请",
-      "dialogues.naomi-branch_event-14.lines.0.speaker": "娜奥米",
-      "dialogues.naomi-branch_event-14.lines.0.text": "你刚才那局打得相当不错。",
-      "dialogues.naomi-branch_event-14.lines.1.speaker": "Naomi",
-      "dialogues.naomi-branch_event-14.lines.1.text": "酒吧还没打烊。走之前要不要和我喝一杯？",
-      "dialogues.naomi-branch_event-14.choices.0.label": "去喝一杯",
-      "dialogues.naomi-branch_event-14.choices.0.lines.0.speaker": "玩家",
-      "dialogues.naomi-branch_event-14.choices.0.lines.0.text": "好吧。喝一杯，然后我就收工了。",
-      "dialogues.naomi-branch_event-14.choices.0.lines.1.speaker": "Naomi",
-      "dialogues.naomi-branch_event-14.choices.0.lines.1.text": "很好。那就花掉那一百块，让它帮你换来更沉稳的球风吧。",
-      "dialogues.naomi-branch_event-14.choices.0.lines.2.speaker": "系统",
-      "dialogues.naomi-branch_event-14.choices.0.lines.2.text": "几杯红酒之后……",
-      "dialogues.naomi-branch_event-14.choices.0.lines.3.speaker": "Naomi",
-      "dialogues.naomi-branch_event-14.choices.0.lines.3.text": "我好醉了……",
-      "dialogues.naomi-branch_event-14.choices.0.choices.0.label": "叫出租车",
-      "dialogues.naomi-branch_event-14.choices.0.choices.0.lines.0.speaker": "玩家",
-      "dialogues.naomi-branch_event-14.choices.0.choices.0.lines.0.text": "我帮你叫辆出租车。",
-      "dialogues.naomi-branch_event-14.choices.0.choices.0.lines.1.speaker": "Naomi",
-      "dialogues.naomi-branch_event-14.choices.0.choices.0.lines.1.text": "谢了，兄弟……",
-      "dialogues.naomi-branch_event-14.choices.0.choices.1.label": "送她去酒店",
-      "dialogues.naomi-branch_event-14.choices.0.choices.1.lines.0.speaker": "玩家",
-      "dialogues.naomi-branch_event-14.choices.0.choices.1.lines.0.text": "……Naomi？",
-      "dialogues.naomi-branch_event-14.choices.1.label": "回家",
-      "dialogues.naomi-branch_event-14.choices.1.lines.0.speaker": "玩家",
-      "dialogues.naomi-branch_event-14.choices.1.lines.0.text": "今晚不行。我得保持头脑清醒。",
-      "dialogues.naomi-branch_event-14.choices.1.lines.1.speaker": "Naomi",
-      "dialogues.naomi-branch_event-14.choices.1.lines.1.text": "很实际。有点无趣，但确实很实际。",
-      "dialogues.dialogue-15.title": "精神错乱",
-      "dialogues.dialogue-15.lines.0.speaker": "玩家",
-      "dialogues.dialogue-15.lines.0.text": "醒醒，Naomi！",
-      "dialogues.dialogue-15.lines.1.speaker": "Naomi",
-      "dialogues.dialogue-15.lines.1.text": "别说话……笨蛋。",
       "dialogues.eline-pre-17.title": "柔手套装",
       "dialogues.eline-pre-17.lines.0.speaker": "Eline",
       "dialogues.eline-pre-17.lines.0.text": "Eline 准备好了，可以开始一局。",
@@ -14443,15 +14226,6 @@
       "dialogues.nana-shirogane-pre-21.title": "银之切",
       "dialogues.nana-shirogane-pre-21.lines.0.speaker": "白根奈奈",
       "dialogues.nana-shirogane-pre-21.lines.0.text": "白根奈奈准备好了，可以开始一局。",
-      "dialogues.naomis dinner.title": "Naomi 的晚餐",
-      "dialogues.naomis dinner.lines.0.speaker": "玩家",
-      "dialogues.naomis dinner.lines.0.text": "你来了。",
-      "dialogues.naomis dinner.lines.1.speaker": "Naomi",
-      "dialogues.naomis dinner.lines.1.text": "那么，接下来做什么？",
-      "dialogues.naomis dinner.lines.2.speaker": "玩家",
-      "dialogues.naomis dinner.lines.2.text": "直接回家",
-      "dialogues.naomis dinner.lines.3.speaker": "Naomi",
-      "dialogues.naomis dinner.lines.3.text": "...",
       "dialogues.lin's master class.title": "干得好，小子。",
       "dialogues.lin's master class.lines.0.speaker": "林",
       "dialogues.lin's master class.lines.0.text": "干得好，小子。",
