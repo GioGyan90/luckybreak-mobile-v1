@@ -1,0 +1,2 @@
+Gloria inner rear hair: adapted rear meshes from Sendagaya Shibu beta, pixiv VRoid Project. CC0-1.0. Existing CharaMake bob library donor; fitted and trimmed to Gloria. Source: https://github.com/madjin/vrm-samples/tree/master/vroid/beta
+CC0: https://creativecommons.org/publicdomain/zero/1.0/

@@ -1,0 +1,8 @@
+Gloria freestyle animation adapted from Swim3D by rene78.
+Source: https://github.com/rene78/Swim3D
+Revision: e789331ed41f479be901d83f96032fd90234bb93
+License: GNU LGPL 2.1 (see LICENSE).
+Modified 2026-10-19: 52-bone retargeting, coordinate conversion, 30Hz sampling, palm-frame correction, in-place root, loop closure.
+The game loads a separate replaceable gloria-freestyle.json animation resource. The accompanying Blender file and original swimmer.glb are the upstream source; retarget-gloria-freestyle.mjs is the conversion source. No donor mesh is used in the game.
+Upstream donor model: Free Base Mesh by angelaxiotis, https://skfb.ly/YZ9Z, CC BY 4.0 https://creativecommons.org/licenses/by/4.0/ (retained only in the source files).
+Animation reference: Dan Smith / Effortless Swimming, https://www.youtube.com/watch?v=b-aG10Hv-NM
