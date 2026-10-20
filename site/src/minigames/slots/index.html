@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#07040a" />
+    <title>Lucky Spin · 邮轮老虎机</title>
+
+    <script type="module" crossorigin src="/luckybreak-mobile-v1/assets/slots-DB8hTKF0-lite-1a5c8c3ffe2e.js"></script>
+    <link rel="modulepreload" crossorigin href="/luckybreak-mobile-v1/assets/storySlots-edsEunqH-lite-1a5c8c3ffe2e.js">
+    <link rel="stylesheet" crossorigin href="/luckybreak-mobile-v1/assets/slots-DXZ1u1oN-lite-1a5c8c3ffe2e.css">
+  </head>
+  <body>
+    <canvas id="scene"></canvas>
+    <div class="vignette"></div>
+    <div class="grain"></div>
+
+    <div class="hud" id="hud">
+      <div class="hud-top" id="hud-top">
+        <div class="brand">
+          <div class="crest">♛</div>
+          <div class="brand-txt">
+            <div class="brand-title">LUCKY SPIN</div>
+            <div class="brand-sub">邮轮老虎机 · CRUISE CASINO</div>
+          </div>
+        </div>
+        <div class="top-actions">
+          <div class="balance" id="balance-card">
+            <span class="coin-icon"></span>
+            <div class="balance-txt">
+              <span class="balance-label">现金</span>
+              <span class="balance-value" id="balance-value">—</span>
+            </div>
+            <span class="balance-delta" id="balance-delta"></span>
+          </div>
+          <button class="icon-btn" id="btn-sound" aria-label="音效开关" title="音效">♪</button>
+          <button class="icon-btn" id="btn-exit" aria-label="菜单" title="菜单">☰</button>
+        </div>
+      </div>
+
+      <div class="mid">
+        <div class="outcome" id="outcome">
+          <div class="outcome-icon" id="outcome-icon"></div>
+          <div class="outcome-body">
+            <div class="outcome-title" id="outcome-title">中奖</div>
+            <div class="outcome-amount" id="outcome-amount">+0</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hud-bottom" id="hud-bottom">
+        <div class="panel">
+          <div class="bet-row">
+            <span class="bet-label">押注</span>
+            <div class="bets" id="bets"></div>
+          </div>
+          <button class="spin-btn" id="btn-spin">
+            <span class="spin-main" id="spin-main">开始</span>
+            <span class="spin-sub" id="spin-sub">SPIN</span>
+          </button>
+          <p class="rules">
+            使用主游戏现金；每局开始即保存扣款与奖金，退出不改变结果。三个相同图案赢取倍数奖金，两个相同图案返还赌注。皇冠可替代任意普通图案，三个皇冠赢取 50 倍大奖！
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flash" id="flash"></div>
+
+    <div class="lucky" id="lucky">
+      <div class="lucky-rays"></div>
+      <div class="lucky-inner">
+        <div class="lucky-crown">♛</div>
+        <div class="lucky-title">LUCKY BREAK</div>
+        <div class="lucky-sub">三个皇冠 · 50× 大奖</div>
+        <div class="lucky-amount" id="lucky-amount"></div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal">
+      <div class="modal-card">
+        <button class="modal-close" id="modal-close" aria-label="关闭">✕</button>
+        <h2 class="modal-title" id="modal-title">奖金表 · PAYTABLE</h2>
+        <div class="paytable" id="paytable"></div>
+        <div class="modal-stats" id="modal-stats"></div>
+        <div class="modal-actions">
+          <button class="ghost-btn" id="btn-continue">继续游戏</button>
+          <button class="ghost-btn danger" id="btn-quit">退出游戏</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="bye" id="bye">
+      <div class="bye-inner">
+        <div class="lucky-crown">♛</div>
+        <h2>谢谢游玩</h2>
+        <p>余额与进度已保存。</p>
+        <button class="spin-btn" id="btn-reenter"><span class="spin-main">重新进入</span></button>
+      </div>
+    </div>
+
+    <div class="boot" id="boot">
+      <div class="boot-mark">♛</div>
+      <div class="boot-text">正在布置赌桌…</div>
+    </div>
+
+  </body>
+</html>
